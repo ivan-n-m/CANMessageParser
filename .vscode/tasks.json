@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+  "type": "shell",
+  "label": "Build Debug",
+  "command": "C:/mingw64/bin/g++.exe",
+  "args": [
+    "-g",
+    "-std=c++17",
+    "-Iinclude",
+    "src/main.cpp",
+    "src/CANMessageParser.cpp",
+    "-o",
+    "build/debug/CANMessageParser.exe"
+  ],
+  "group": {
+    "kind": "build",
+    "isDefault": true
+  },
+  "problemMatcher": ["$gcc"]
+}
+    ]
+}
